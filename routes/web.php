@@ -9,5 +9,6 @@ Route::get('/', function () {
 
 //this will return an array which will later be converted into a json object
 Route::get('/about', function () {
-    return ['foo' => 'bar'];
+    //return ['foo'=>'bar']
+    return view('about');
 });
