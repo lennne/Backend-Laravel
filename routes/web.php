@@ -6,7 +6,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//this will return the text 'About Page' when user access the web route '/about'
+
+//this will return an array which will later be converted into a json object
 Route::get('/about', function () {
-    return 'About Page';
+    return ['foo' => 'bar'];
 });
