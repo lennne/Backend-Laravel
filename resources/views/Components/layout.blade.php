@@ -21,7 +21,7 @@
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
             <div class="shrink-0">
-              <img class="size-8" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              <img class="size-8" src="https://laravel.com/img/logomark.min.svg" alt="Your Company">
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
@@ -48,7 +48,7 @@
                   <button type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">Open user menu</span>
-                    <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="size-8 rounded-full" src="https://media.licdn.com/dms/image/v2/C5603AQF7oFXM26loqg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1621040590637?e=1738195200&v=beta&t=_cJNd5sG6iUV5oeeL2sE8K3lJ0uiz8zMNEC1pZ6xTPc" alt="">
                   </button>
                 </div>
   
