@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 
@@ -14,6 +14,5 @@ Route::get('/about', function () {
 });
 
 Route::get('/contact', function () {
-    //return ['foo'=>'bar']
     return view('contact');
 });
