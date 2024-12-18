@@ -30,7 +30,7 @@
                 <!--In this example we're passing the active value to the component as a php value-->
                 <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                 <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-                <x-nav-link href="/contact" :active="request()->is('contact')" >Contact</x-nav-link>
+                <x-nav-link href="/jobs" :active="request()->is('contact')" >Jobs</x-nav-link>
                 </div>
             </div>
           </div>
@@ -83,7 +83,7 @@
           <!-- Conditionally render a style attribute -->
           <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
           <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-          <x-nav-link href="/contact" :active="request()->is('contact')" >Contact</x-nav-link>
+          <x-nav-link href="/jobs" :active="request()->is('job')" >Jobs</x-nav-link>
 
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
