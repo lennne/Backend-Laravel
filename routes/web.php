@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
+use App\Models\Job;
 
 Route::get('/', function () {
     return view('home');
@@ -18,48 +19,16 @@ Route::get('/about', function () {
 Route::get('/jobs', function () {
     return view('jobs',[
 
-    'jobs' =>  [
-        [
-             'id' => 1,
-            'title' => 'Director',
-            'salary' => '$50,000'
-        ],
-        [
-            'id' => 2,
-           'title' => 'Programmer',
-           'salary' => '$10,000'
-        ],
-        [
-            'id' => 3,
-           'title' => 'Teacher',
-           'salary' => '$40,000'
-       ]
-    ]
+    'jobs' =>  Job::all()
     ]);
 });
 
 //This route has a wildcard and it is {id}, so when the route is being accessed it'll appear as "/job/2"
 //and the 2 will be extracted as id {id:2}
 Route::get('/job/{id}', function ($id) {
-    $jobs = [
-        [
-             'id' => 1,
-            'title' => 'Director',
-            'salary' => '$50,000'
-        ],
-        [
-            'id' => 2,
-           'title' => 'Programmer',
-           'salary' => '$10,000'
-        ],
-        [
-            'id' => 3,
-           'title' => 'Teacher',
-           'salary' => '$40,000'
-       ]
-        ];
     
-       $job = Arr::first($jobs, fn($jobs) => $jobs['id'] == $id);
+    //Job is a Model Class that has a static function called find
+    $job = Job::find($id);
         
     return view('job', ['job'=> $job]);
 });
